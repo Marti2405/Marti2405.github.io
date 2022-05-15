@@ -27,6 +27,7 @@ body {
     display: flex;
 	flex-direction: row;
     background: linear-gradient(170deg, rgba(2,0,36,1) 37%, rgba(130,24,66,1) 68%, rgba(255,137,41,1) 100%);
+    background-repeat: repeat-x;
 
 }
 
