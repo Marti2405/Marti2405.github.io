@@ -35,18 +35,18 @@ box.addEventListener("keypress", function(event) {
         position_recente = position;
         if (position==-1){
             document.getElementById("message").innerHTML = "";
-            document.getElementById("message").style.background = "#495172" ;
+            document.getElementById("message").style.background = "transparent" ;
             placer_mot(input,position);
             update_liste();
             document.cookie = "filter=value";
             window.location.replace('./victoire.html');
         }
         else if (position==0){
-            document.getElementById("message").style.background = "#3E54B6" ;
             document.getElementById("message").innerHTML = "Ce mot n'est pas proche du mot à trouver. Essayez à nouveau!";
+            document.getElementById("message").style.background = "#495172" ;
         }
         else {
-            document.getElementById("message").style.background = "#495172" ;
+            document.getElementById("message").style.background = "transparent" ;
             document.getElementById("message").innerHTML = "";
             placer_mot(input,position);
             update_liste();

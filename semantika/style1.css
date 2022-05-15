@@ -189,3 +189,7 @@ footer {
     color: #f3482f;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+#message {
+    background-color: transparent;
+}
