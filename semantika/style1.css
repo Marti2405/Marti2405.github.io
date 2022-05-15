@@ -102,6 +102,7 @@ body {
     margin: 2.5%;
     padding: 1%;
     border-radius: 15px;
+    padding-left: 10%;
 
 }
 
@@ -185,7 +186,7 @@ footer {
 #titre_tete{
     padding-top: 10px;
     padding-left: 10px;
-    font-size: 60px;
+    font-size: 50px;
     color: #f3482f;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

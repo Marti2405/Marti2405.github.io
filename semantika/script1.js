@@ -29,7 +29,7 @@ box.addEventListener("keypress", function(event) {
 });
     
     function tryclick() {
-        var input = document.getElementById("choix").value;
+        var input = document.getElementById("choix").value.toLowerCase();
         var position = verif_liste(input);
         mot_recent = input;
         position_recente = position;
