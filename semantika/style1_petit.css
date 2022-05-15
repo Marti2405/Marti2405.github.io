@@ -1,0 +1,94 @@
+@media (max-width: 900px){
+
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    header {
+        background-color: palegoldenrod;
+        position: absolute;
+        margin-top: 0;
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    body {
+        background-color: plum;
+        display: flex;
+	    flex-direction: column;
+    }
+
+    #gauche {
+        background-color: aqua ;
+    }
+    #droite {
+        background-color: greenyellow;
+    }
+    
+    footer {
+        background-color: palegoldenrod;
+        position: fixed;
+        bottom: 0%;
+    }
+    
+    #tentative {
+        background-color: white;
+        padding: 2%;
+        margin: 1%;
+        /*position : fixed;
+        pour qu'il reste à l'écran
+        ilo fau juste trouver comment
+        scroller tou en haut de la
+        page quand on à fini */
+        top: 15%;
+    }
+    
+    #gauche {
+    
+        width: 100%;
+        height: 50%;
+        max-width: 80vw;
+        margin: 5%;
+        margin-top: 12%;
+        margin-left: 8%;
+        padding: 1%;
+        margin-right: 0%;
+    
+    }
+    
+    #droite {
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 2.5%;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 1%;
+        padding-left: 5vw;
+        padding-right: 4%;
+        min-width: 45vw;
+    }
+
+    .footer-txt {
+        padding-right: 1ch;
+        font-style: normal;
+        font-size: 65%;
+    }
+    
+    .footer-link {
+        padding-right: 1ch;
+        font-size: 65%;
+        font-style: normal;
+        text-decoration: underline;
+        /*color: rgb(28, 9, 233);
+    */
+    }
+    
+    .footer-link:hover, .footer-link:active {
+        color: rgb(32, 88, 255);
+        text-decoration: none;
+        font-size: 67%;
+    }
+}
