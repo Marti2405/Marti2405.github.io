@@ -16,9 +16,9 @@
 
 <header>
     <h1 id="titre_tete">SEMÁNTIKA</h1>
-    <a id="change_langue1">esp</a>
-    <a href="index_fr.html" id="change_langue2">fr</a>
-    <a href="index_eng.html" id="change_langue3">eng</a>
+    <a id="change_langue1">eng</a>
+    <a href="index.html" id="change_langue2">esp</a>
+    <a href="index_fr.html" id="change_langue3">fr</a>
 </header>
 
 <body>
@@ -27,19 +27,19 @@
     <script src="script1.js" type="module"></script>
 
     <div id="gauche">
-        <h1 id="reglas">Reglas</h1>
+        <h1 id="reglas">Rules</h1>
         <br>
-        <h2 id="explication_regles1">El objetivo del juego es encontrar la palabra secreta en español tratando de acercarse lo más posible a ella contextualmente. Si tu palabra está entre las 10.000 más cercanas, se le dará una puntuación entre 1 y 10.000, siendo 10.000 la puntuación de la palabra más cercana a la palabra secreta. La cercanía de una palabra no es ortográfica sino semántica o contextual.</h2>
+        <h2 id="explication_regles1">The goal of the game is to find the secret Spanish word by trying to get as close as possible to it contextually. If your word is in the top 10,000 words, it will be given a score between 1 and 10,000, with 10,000 being the score of the closest word to the secret word. The proximity of a word is not orthographic but semantic or contextual.</h2>
         <br>
-        <h2 id="explication_regles2">No se evalúa con la ayuda de un diccionario, sino con una base de datos de textos a partir de la cual se ha calculado una "distancia" relativa entre cada palabra. Dos palabras cercanas en ese campo léxico no son necesariamente sinónimas. Por ejemplo, un adjetivo y su opuesto pueden considerarse cercanos porque pueden describir la misma cosa.</h2>
+        <h2 id="explication_regles2">It is evaluated not with the help of a dictionary, but with a database of texts from which a relative "distance" between each word has been calculated. Two close words in such a lexical field are not necessarily synonymous. For example, an adjective and its opposite may be considered close because they can describe the same thing.</h2>
         </div>
 
     <div id="droite">
         <div id="tentative">
             <!--<h3 id="mot_tentative">Tentative</h3>-->
-            <input id="choix" type="text"  placeholder="Entra una palabra" required="" >
+            <input id="choix" type="text"  placeholder="Enter a word" required="" >
             <button type="button" id="try" >
-                Enviar
+                Send
             </button>
         </div>
         <div id="message"></div>
@@ -47,8 +47,8 @@
             <thead id="cases_tab">
             <tr>
                 <th id="n_intento">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nº&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                <th id="palabra">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Palabra&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                <th id="puntuacion">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Puntuación&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                <th id="palabra">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Word&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                <th id="puntuacion">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Score&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
             </tr>
             </thead>
             <tbody id="guesses"><tr class=""> </tbody>
