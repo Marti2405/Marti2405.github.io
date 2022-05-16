@@ -42,7 +42,7 @@ box.addEventListener("keypress", function(event) {
             window.location.replace('./victoire.html');
         }
         else if (position==0){
-            document.getElementById("message").innerHTML = "Ce mot n'est pas proche du mot à trouver. Essayez à nouveau!";
+            document.getElementById("message").innerHTML = "Esta palabra no está en las palabras más próximas!";
             document.getElementById("message").style.background = "#495172" ;
         }
         else {
@@ -125,7 +125,7 @@ box.addEventListener("keypress", function(event) {
         text +="<th class=\"word\" id=\"mots\">"+mot_recent+"</th>";
         text +="<th class=\"number\" id=\"score\">"+(10000-position_recente)+"</th>";
         text +="</tr>";
-        text += "<tr><td colspan=\"6\"><hr></td></tr>"
+        text += "<tr><td id=\"jtefume\" colspan=\"6\"><hr></td></tr>"
 
         for (var i = 0; i<taille; i++){
 

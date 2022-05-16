@@ -1,75 +1,83 @@
 @media (max-width: 900px){
 
+    .color1 {color: #5b1844;}
+    .color2 {color: #821842;}
+    .color3 {color: #b6243d;}
+    .color4 {color: #f3482f;}
+    .color5 {color: #ff8929;}
+
     * {
         margin: 0%;
         padding: 0%;
+        font-family: 'Audiowide', Regular;
     }
 
     header {
-        background-color: palegoldenrod;
-        position: absolute;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
         margin-top: 0;
         width: 100%;
         margin-left: 0%;
     }
 
+    #titre_tete {
+        color: #b6243d;
+        font-family: 'Audiowide', Regular;
+        font-size: 50px;
+    }
+
     body {
-        background-color: plum;
         display: flex;
 	    flex-direction: column;
+        max-width: 100%;
+        background: linear-gradient(170deg, rgba(2,0,36,1) 37%, rgba(130,24,66,1) 68%, rgba(255,137,41,1) 100%);
+        height: 100%;
     }
 
     #gauche {
-        background-color: aqua ;
+        background-color: transparent ;
+        border-radius: 0;
+        color: white;
+        width: 75%;
+        height: 50%;
+        width: 100%;
+        margin-top: 100px;
+        margin-bottom: 5%;
+ 
     }
     #droite {
-        background-color: greenyellow;
+        background-color: transparent;
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        padding-bottom: 60px;
     }
     
     footer {
-        background-color: palegoldenrod;
+        background-color: transparent;
         position: fixed;
         bottom: 0%;
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+    }
+
+    #created {
+        position: absolute;
+        bottom: 5px;
     }
     
     #tentative {
-        background-color: white;
-        padding: 2%;
-        margin: 1%;
-        /*position : fixed;
-        pour qu'il reste à l'écran
-        ilo fau juste trouver comment
-        scroller tou en haut de la
-        page quand on à fini */
-        top: 15%;
-    }
-    
-    #gauche {
-    
-        width: 100%;
-        height: 50%;
-        max-width: 80vw;
-        margin: 5%;
-        margin-top: 12%;
-        margin-left: 8%;
-        padding: 1%;
-        margin-right: 0%;
-    
-    }
-    
-    #droite {
-    
+        background-color: #821842;
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        margin: 2.5%;
-        margin-left: 10%;
-        margin-right: 10%;
-        padding: 1%;
-        padding-left: 5vw;
-        padding-right: 4%;
-        min-width: 45vw;
+        max-width: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
+    
 
     .footer-txt {
         padding-right: 1ch;
@@ -82,8 +90,6 @@
         font-size: 65%;
         font-style: normal;
         text-decoration: underline;
-        /*color: rgb(28, 9, 233);
-    */
     }
     
     .footer-link:hover, .footer-link:active {
@@ -91,4 +97,50 @@
         text-decoration: none;
         font-size: 67%;
     }
+
+    #reglas {
+        color: white;
+        font-size: 26px;
+    }
+
+    #explication_regles1 {
+        color: white;
+
+    }
+
+    #choix {
+        margin-left: 10%;
+    }
+
+    #explication_regles2 {
+        color: white;
+
+    }
+
+    #explication_regles2:hover {
+        color: white;
+        font-size: 12px;
+    }
+
+    #choix:hover {
+        background-color: #691536;
+    }
+
+
+    #try {
+        min-width: 12vw;
+        background-color: #680c31;
+        display: flex;
+        justify-content: center;
+        margin-right: 10%;
+    }
+
+    #try:hover {
+        color: white;
+    }
+
+
+
+
+
 }
