@@ -1,4 +1,5 @@
 import liste_pere from './list_of_the_day.json' assert {type: 'json'};
+import liste_full_mots from './mots.json' assert {type: 'json'};
 
 $(function(){
 
@@ -11,47 +12,98 @@ $(function(){
     var position_recente = 0;
     var placement_recent = 0;
 
+    const liste_check = new Set(Object.values(liste_full_mots));
+
+
 
     document.getElementById("try").onclick = tryclick;
     
     // Get the input field
-var box = document.getElementById("choix");
+    var box = document.getElementById("choix");
 
-// Execute a function when the user presses a key on the keyboard
-box.addEventListener("keypress", function(event) {
-  // If the user presses the "Enter" key on the keyboard
-  if (event.key === "Enter") {
-    // Cancel the default action, if needed
-    event.preventDefault();
-    // Trigger the button element with a click
-    document.getElementById("try").click();
-  }
-});
+    // Execute a function when the user presses a key on the keyboard
+    box.addEventListener("keypress", function(event) {
+    // If the user presses the "Enter" key on the keyboard
+    if (event.key === "Enter") {
+        // Cancel the default action, if needed
+        event.preventDefault();
+        // Trigger the button element with a click
+        document.getElementById("try").click();
+        }
+    });
+
+    var fade_ok = false;
+
     
     function tryclick() {
         var input = document.getElementById("choix").value.toLowerCase();
         var position = verif_liste(input);
+        const isMotInList = liste_check.has(input);
         mot_recent = input;
         position_recente = position;
         if (position==-1){
             document.getElementById("message").innerHTML = "";
             document.getElementById("message").style.background = "transparent" ;
+            document.getElementById("message").style.color ="transparent";
             placer_mot(input,position);
             update_liste();
             document.cookie = "filter=value";
             window.location.replace('./victoire.html');
         }
         else if (position==0){
-            document.getElementById("message").innerHTML = "Esta palabra no está en las palabras más próximas!";
-            document.getElementById("message").style.background = "#495172" ;
+            if (isMotInList) {
+                document.getElementById("message").innerHTML = "Palabra no reconocida";
+                document.getElementById("message").style.background = "rgba(255, 255, 255, 0.343)" ;
+                document.getElementById("message").style.color ="rgba(255, 255, 255, 1)";
+                fade_ok = true;
+            }
+            else {
+                document.getElementById("message").innerHTML = "Esta palabra no está en las palabras más próximas!";
+                document.getElementById("message").style.background = "rgba(255, 255, 255, 0.343)" ;
+                document.getElementById("message").style.color ="rgba(255, 255, 255, 1)";
+                fade_ok = true;
+            }
         }
         else {
             document.getElementById("message").style.background = "transparent" ;
             document.getElementById("message").innerHTML = "";
+            document.getElementById("message").style.color ="transparent";
             placer_mot(input,position);
             update_liste();
         }
         document.querySelector('#choix').value = "";
+        
+    }
+
+    var i = 0;
+    setInterval(fade,50);
+
+    function fade(){
+        if (fade_ok){
+            i+=0.005;
+            
+            if(i>0.34) {
+                fade_ok = false;
+                //document.getElementById("message").innerHTML = "";
+                document.getElementById("message").style.background = "transparent" ;
+                document.getElementById("message").style.color ="transparent";
+                i=0;
+            }
+            else {
+                var fd = 0.343-i;
+                var fd2 = 1-i;
+                var txte = "rgba(255, 255, 255, ";
+                var txte2 = txte;
+                txte+= fd;
+                txte2+=fd2;
+                txte+=")"
+                txte2+=")"
+                document.getElementById("message").style.background = txte ;
+                document.getElementById("message").style.color = txte2 ;
+                console.log(i);
+            }
+        }        
+        
     }
 
     //-1 si c'est le bon mot
@@ -128,7 +180,7 @@ box.addEventListener("keypress", function(event) {
         text += "<tr><td id=\"jtefume\" colspan=\"6\"><hr></td></tr>"
 
         for (var i = 0; i<taille; i++){
-
+            
             text +="<tr>";
             text +="<th class=\"number\" id=\"ordre\">"+numero_tentative[i]+"</th>";
             text +="<th class=\"word\" id=\"mots\">"+liste_mot[i]+"</th>";

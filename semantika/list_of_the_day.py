@@ -3,6 +3,13 @@ import random
 
 
 
+#Taille de la liste des mots---------
+taille_liste_mots = 25000
+#------------------------------------
+
+
+
+
 mot_ok = False
 
 while not mot_ok:
@@ -52,7 +59,7 @@ liste_mots = ["aaaa","bbbb","cccc"]
 liste_score = [50,60,70]
 
 def update(mot,score):
-    x=25000
+    x=taille_liste_mots
     if liste_score[-1]<score:
         liste_mots.append(mot)
         liste_score.append(score)
