@@ -43,7 +43,7 @@
 }
 #change_langue2:hover {
     font-size: 22px;
-    top: 0px;
+    top: -2px;
 }
 #change_langue3:hover {
     font-size: 22px;
@@ -244,7 +244,7 @@ footer {
 
 #explication_regles2:hover {
     color: white;
-    font-size: 25px;
+    font-size: 15px;
     
 }
 
