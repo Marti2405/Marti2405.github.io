@@ -1,0 +1,162 @@
+@media (max-width: 900px){
+
+    .color1 {color: #5b1844;}
+    .color2 {color: #821842;}
+    .color3 {color: #b6243d;}
+    .color4 {color: #f3482f;}
+    .color5 {color: #ff8929;}
+
+    * {
+        margin: 0%;
+        padding: 0%;
+        font-family: 'Audiowide', Regular;
+    }
+
+    header {
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    #titre_tete {
+        color: #b6243d;
+        font-family: 'Audiowide', Regular;
+        font-size: 50px;
+    }
+
+    body {
+        display: flex;
+	    flex-direction: column;
+        max-width: 100%;
+        background: linear-gradient(170deg, rgba(2,0,36,1) 37%, rgba(130,24,66,1) 68%, rgba(255,137,41,1) 100%);
+        height: 100%;
+    }
+
+    #gauche {
+        background-color: transparent ;
+        border-radius: 0;
+        color: white;
+        width: 75%;
+        height: 50%;
+        width: 100%;
+        margin-top: 100px;
+        margin-bottom: 5%;
+ 
+    }
+    #droite {
+        background-color: transparent;
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        padding-bottom: 60px;
+    }
+    
+    footer {
+        background-color: transparent;
+        position: fixed;
+        bottom: 0%;
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+    }
+
+    #created {
+        position: absolute;
+        bottom: 5px;
+    }
+    
+    #tentative {
+        background-color: #821842;
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+
+    .footer-txt {
+        padding-right: 1ch;
+        font-style: normal;
+        font-size: 65%;
+    }
+    
+    .footer-link {
+        padding-right: 1ch;
+        font-size: 65%;
+        font-style: normal;
+        text-decoration: underline;
+    }
+    
+    .footer-link:hover, .footer-link:active {
+        color: rgb(32, 88, 255);
+        text-decoration: none;
+        font-size: 67%;
+    }
+
+    #reglas {
+        color: white;
+        font-size: 26px;
+    }
+
+    #explication_regles1 {
+        color: white;
+
+    }
+
+    #choix {
+        margin-left: 10%;
+    }
+
+    #explication_regles2 {
+        color: white;
+
+    }
+
+    #explication_regles2:hover {
+        color: white;
+        font-size: 12px;
+    }
+
+
+    #choix:hover {
+        background-color: #691536;
+    }
+
+
+    #try {
+        min-width: 12vw;
+        background-color: #680c31;
+        display: flex;
+        justify-content: center;
+        margin-right: 10%;
+    }
+
+    #try:hover {
+        color: white;
+    }
+
+
+
+
+
+}
+
+
+@media (max-width: 590px){
+
+    #guessable {
+        font-size: 10px;
+    }
+
+    footer {
+        font-size: 8px;
+
+    }
+
+}
+
