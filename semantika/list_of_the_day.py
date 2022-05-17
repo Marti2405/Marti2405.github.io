@@ -7,35 +7,35 @@ import random
 taille_liste_mots = 25000
 #------------------------------------
 
+current_folder = r'C:\Users\marti\Desktop\Dossiers\Coding\Semanticas'
+file1 = current_folder+'\list_of_the_day.json'
+file2 = current_folder+'\w2v.txt'
 
 
 
-mot_ok = False
+position_mot_voulu = str(input("Entrez le mot voulu :")) 
 
-while not mot_ok:
-
-    position_mot_voulu = random.randint(47,1000653) #int(input("Entrez la position du mot voulu : ")) 
-
-    with open(r'./w2v.txt' , encoding='utf-8') as f:
-        q = f.readline().split()
-        nbe_mots = q[0]
-        taille_position = q[1]
-        for p in range(position_mot_voulu):
-            x= f.readline()
-        for i in range(1):
-            x = f.readline()
-            y = x.split(" ")
-            motc = y[0].lower()
-            posc = [float(u) for u in y[1::]]
+with open(file2 , encoding='utf-8') as f:
+    q = f.readline().split()
+    nbe_mots = q[0]
+    taille_position = q[1]
+    for p in range(1000653):
+        x= f.readline()
+        if x.split(" ")[0] == position_mot_voulu:
+            motc = x.split(" ")[0]
+            posc = x.split(" ")[1:]
+            break
+        
 
 
     mot = motc
     pos = posc
+    for i in range(len(pos)):
+        pos[i] = float(pos[i])
+    
     print("Mot choisit : " , mot)
+    print("Position :" , pos)
     print("----------------------")
-    x = int(input("Le mot vous va-t-il ? (Oui->1,Non->0) : "))
-    if x==1:
-        mot_ok = True
 
 
 #MOT CHOISIT->MOT , POSITION DU MOT CHOISIT->POS
@@ -59,7 +59,7 @@ liste_mots = ["aaaa","bbbb","cccc"]
 liste_score = [50,60,70]
 
 def update(mot,score):
-    x=taille_liste_mots
+    x=25000
     if liste_score[-1]<score:
         liste_mots.append(mot)
         liste_score.append(score)
@@ -80,7 +80,7 @@ def update(mot,score):
 
 
 
-with open(r'./w2v.txt' , encoding='utf-8') as f:
+with open(file2 , encoding='utf-8') as f:
     q = f.readline().split()
     nbe_mots = q[0]
     taille_position = q[1]
@@ -98,11 +98,11 @@ with open(r'./w2v.txt' , encoding='utf-8') as f:
             #print(liste_score)
 
 
-with open(r'./list_of_the_day.json', "w" ) as f:  
+with open(file1, "w" ) as f:  
     liste_mots = {"mot":mot,"liste":liste_mots}
     json.dump(liste_mots,f)
 
 print("Liste crée. Uploadé dans le fichier list_of_the_day.json")
-input()
+
 
 

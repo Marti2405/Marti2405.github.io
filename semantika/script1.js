@@ -11,7 +11,7 @@ $(function(){
     var mot_recent = "";
     var position_recente = 0;
     var placement_recent = 0;
-
+    var insert_pos = 0;
     const liste_check = new Set(Object.values(liste_full_mots));
 
 
@@ -52,16 +52,19 @@ $(function(){
         }
         else if (position==0){
             if (isMotInList) {
-                document.getElementById("message").innerHTML = "Palabra no reconocida";
-                document.getElementById("message").style.background = "rgba(255, 255, 255, 0.343)" ;
-                document.getElementById("message").style.color ="rgba(255, 255, 255, 1)";
-                fade_ok = true;
-            }
-            else {
                 document.getElementById("message").innerHTML = "Esta palabra no está en las palabras más próximas!";
                 document.getElementById("message").style.background = "rgba(255, 255, 255, 0.343)" ;
                 document.getElementById("message").style.color ="rgba(255, 255, 255, 1)";
                 fade_ok = true;
+                i =0;
+                insert_pos+=1;
+            }
+            else {
+                document.getElementById("message").innerHTML = "Palabra no reconocida";
+                document.getElementById("message").style.background = "rgba(255, 255, 255, 0.343)" ;
+                document.getElementById("message").style.color ="rgba(255, 255, 255, 1)";
+                fade_ok = true;
+                i=0;
             }
         }
         else {
@@ -122,7 +125,7 @@ $(function(){
 
     function placer_mot(mot,position){
         var tll = liste_score.length;
-        var insert_pos = tll+1;
+        insert_pos +=1;
         placement_recent = insert_pos;
         if (tll==0){
             liste_mot.unshift(mot);

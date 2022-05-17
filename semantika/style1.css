@@ -227,7 +227,7 @@ footer {
     padding-left: 10%;
     padding-right: 10%;
     color: white;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 100;
     text-align: justify;
 }
@@ -244,7 +244,7 @@ footer {
 
 #explication_regles2:hover {
     color: white;
-    font-size: 15px;
+    font-size: 14px;
     
 }
 
@@ -267,21 +267,4 @@ footer {
 }
 
 
-/* width */
-::-webkit-scrollbar {
-    width: 20px;
-    background-color: rgb(50, 49, 49);
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px rgb(96, 91, 91);
-    border-radius: 10px;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: rgb(50, 49, 49);
-    border-radius: 10px;
-  }
 
