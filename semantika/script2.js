@@ -38,7 +38,6 @@ function Anim(){
   texte += "linear-gradient(";
   texte += angle
   texte += "deg, rgba(2,0,36,1) 37%, rgba(130,24,66,1) 68%, rgba(255,137,41,1) 100%)"
-  console.log(texte);
   document.getElementById("bodd").style.background = texte;
 }
 

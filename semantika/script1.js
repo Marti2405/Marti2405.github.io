@@ -1,4 +1,15 @@
-import liste_pere from './list_of_the_day.json' assert {type: 'json'};
+
+let today = new Date().getDate();
+console.log(today);
+//let liste_pere = import('./list_of_the_day'+today+'.json');
+import liste_pere from './list_of_the_day21.json' assert {type: 'json'};
+//
+  //  const liste_pere = import('./list_of_the_day'+today+'.json', {
+      //  assert: {
+       //     type: 'json'
+      //  }
+ //   });
+    
 import liste_full_mots from './mots.json' assert {type: 'json'};
 
 $(function(){

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,9 @@
     <title>Semantica</title>
     <link rel="stylesheet" href="style2.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Actor&family=Alata&family=Audiowide&display=swap');
+    </style>
 </head>
 <header>
 
@@ -21,9 +24,9 @@
         <table id="guessable">
             <thead>
             <tr>
-                <th class="number" id="chronoOrder">&nbsp;&nbsp;&nbsp;&nbsp;Nº&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                <th class="word" id="alphaOrder">&nbsp;&nbsp;&nbsp;&nbsp;Mot&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                <th class="number" id="similarityOrder">&nbsp;&nbsp;&nbsp;&nbsp;Score&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                <th class="number" id="chronoOrder">&nbsp;&nbsp;&nbsp;&nbsp;Nº&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                <th class="word" id="alphaOrder">&nbsp;&nbsp;&nbsp;&nbsp;Palabra&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                <th class="number" id="similarityOrder">&nbsp;&nbsp;&nbsp;&nbsp;Puntuación&nbsp;&nbsp;&nbsp;&nbsp;</th>
             </tr>
             </thead>
             <tbody id="guesses_victoire"><tr class=""> 
@@ -31,7 +34,7 @@
         </table>
         </div>
         <div id="rejouer">
-            <button type="button" id="rejouer">Rejouer</button>
+            <button type="button" id="rejouer">Volver a jugar</button>
         </div>
 
     </div>
