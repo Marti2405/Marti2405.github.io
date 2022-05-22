@@ -31,7 +31,8 @@ body {
 }
 
 #mot{
-
+    display: flex;
+    justify-content: center;
     color:white; 
     padding: 10px;
     border-radius: 90px;
@@ -39,6 +40,7 @@ body {
     margin-top: 10%;
     text-align: center;
     font-size: large;
+    max-width: 80%;
 
 }
 
@@ -72,11 +74,14 @@ body {
 
 footer {
     background-color: transparent;
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    bottom: -150px;
     width: 50%;
     height: 3%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
 }
 
 .footer-txt {
@@ -90,11 +95,69 @@ footer {
     padding-right: 1ch;
     font-style: normal;
     text-decoration: underline;
-    color: #080638;
+    color: white;
+
 }
 
 .footer-link:hover, .footer-link:active {
     color: #5b1844;
     text-decoration: none;
     font-size: 105%;
+}
+
+
+
+@media (max-width: 900px){
+
+    #centre {
+        width: 100%;
+    }
+
+    #liste_30{
+        width: 100%;
+    }
+    #rejouer {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #mot {
+        width: 100%;
+        margin: 10%
+    }
+    footer {
+        background-color: rgba(2,0,36,1);
+        position: fixed;
+        bottom: 0px;
+        height: 2%;
+        padding: 1px;
+        padding-bottom: 8px;
+        width: 100%;
+        left: 0%;
+        font-size: 6px;
+    }
+    
+    .footer-txt {
+        padding-right: 1ch;
+        font-style: normal;
+        color: #ff8929;
+        margin-bottom: 0px;
+        font-size: 8px;
+    }
+    
+    .footer-link {
+        padding-right: 1ch;
+        font-style: normal;
+        text-decoration: underline;
+        color: white;
+        margin-bottom: 0px;
+        margin-top: 8px;
+        font-size: 8px;
+    }
+
+    #rejouer {
+        margin-bottom: 50px;
+    }
+
 }

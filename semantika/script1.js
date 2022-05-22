@@ -47,9 +47,9 @@ $(function(){
             document.getElementById("message").innerHTML = "";
             document.getElementById("message").style.background = "transparent" ;
             document.getElementById("message").style.color ="transparent";
-            placer_mot(input,position);
-            update_liste();
-            document.cookie = "filter=value";
+            //placer_mot(input,position);
+            //update_liste();
+            //document.cookie = "filter=value";
             window.location.replace('./victoire.html');
         }
         else if (position==0){
@@ -105,7 +105,7 @@ $(function(){
                 txte2+=")"
                 document.getElementById("message").style.background = txte ;
                 document.getElementById("message").style.color = txte2 ;
-                console.log(i);
+                
             }
         }        
         
