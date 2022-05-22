@@ -196,18 +196,6 @@ $(function(){
         document.getElementById("guesses").innerHTML = text;
     }
 
-    var t = 0;
-    setInterval(placehold,150);
-    
-    function placehold(){
-        t++;
-        var load_animation_text = "Entra una palabra...";
-        var youp = t%50;
-        document.getElementById("choix").setAttribute('placeholder',load_animation_text.slice(0,youp))
-    }
-
-
-
     let tdy = new Date().toDateString().split(' ');
     var present_day = tdy[2] + " " + tdy[1] + " " + tdy[3];
     console.log("Word for the "+present_day+".");
