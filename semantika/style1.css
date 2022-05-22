@@ -132,7 +132,11 @@ body {
 
 #choix:focus, #choix:hover {
     background-color: #631232d7;
+    
+}
 
+#choix:focus::placeholder {
+    color: transparent;
 }
 
 
