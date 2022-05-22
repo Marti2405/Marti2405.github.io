@@ -1,5 +1,8 @@
-import liste_pere from './list_of_the_day.json' assert {type: 'json'};
+let today = new Date().getDate();
+import liste_all from './list_for_the_month.json' assert {type: 'json'};
+
 $(function(){
+var liste_pere = liste_all[today.toString()];
 var liste_tous_mots = liste_pere["liste"];
 var mot_victoire = liste_pere["mot"];
 document.getElementById("rejouer").onclick = rejouerclick;
@@ -40,6 +43,10 @@ function Anim(){
   texte += "deg, rgba(2,0,36,1) 37%, rgba(130,24,66,1) 68%, rgba(255,137,41,1) 100%)"
   document.getElementById("bodd").style.background = texte;
 }
-
+let tdy = new Date().toDateString().split(' ');
+var present_day = tdy[2] + " " + tdy[1] + " " + tdy[3];
+console.log("Word for the "+present_day+".");
+console.log("You can see how the algorithm works and view the code at https://github.com/Marti2405/Marti2405.github.io/tree/main/semantika");
+console.log();
 
 })
