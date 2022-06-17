@@ -8,3 +8,5 @@ def check_current_words():
         for i in jours:
             q = x[str(i)]["mot"]
             print(f"Jour nº{i} : {q}")
+
+check_current_words()
