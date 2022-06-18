@@ -60,6 +60,9 @@ $(function(){
                 fade_ok = true;
                 i =0;
                 insert_pos+=1;
+                placement_recent +=1;
+                position_recente = 50000;
+                update_liste();
             }
             else {
                 document.getElementById("message").innerHTML = "Palabra no reconocida";
@@ -82,6 +85,7 @@ $(function(){
 
     var i = 0;
     setInterval(fade,50);
+
 
     function fade(){
         if (fade_ok){
@@ -180,7 +184,7 @@ $(function(){
         text +="<tr>";
         text +="<th class=\"number\" id=\"ordre\">"+placement_recent+"</th>";
         text +="<th class=\"word\" id=\"mots\">"+mot_recent+"</th>";
-        text +="<th class=\"number\" id=\"score\">"+(10000-position_recente)+"</th>";
+        text +="<th class=\"number\" id=\"score\">"+(50000-position_recente)+"</th>";
         text +="</tr>";
         text += "<tr><td id=\"jtefume\" colspan=\"6\"><hr></td></tr>"
 
@@ -189,7 +193,7 @@ $(function(){
             text +="<tr>";
             text +="<th class=\"number\" id=\"ordre\">"+numero_tentative[i]+"</th>";
             text +="<th class=\"word\" id=\"mots\">"+liste_mot[i]+"</th>";
-            text +="<th class=\"number\" id=\"score\">"+(10000-liste_score[i])+"</th>";
+            text +="<th class=\"number\" id=\"score\">"+(50000-liste_score[i])+"</th>";
 
         }
 
@@ -199,7 +203,8 @@ $(function(){
     let tdy = new Date().toDateString().split(' ');
     var present_day = tdy[2] + " " + tdy[1] + " " + tdy[3];
     console.log("Word for the "+present_day+".");
-    console.log("You can see how the algorithm works and view the code at https://github.com/Marti2405/Marti2405.github.io/tree/main/semantika");
+    console.log("You can see how the algorithm works and view the code at : ");
+    console.log("https://github.com/Marti2405/Marti2405.github.io/tree/main/semantika");
     console.log();
 
 

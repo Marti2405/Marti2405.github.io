@@ -13,6 +13,7 @@ body {
     border-radius: 20px;
     margin: 0 auto;
     width: 350px;
+    padding-bottom: 10%;
 
 }
 
@@ -36,11 +37,12 @@ body {
     color:white; 
     padding: 10px;
     border-radius: 90px;
-    background-color: #821842;
+    background-color: #5b18444b;
     margin-top: 10%;
     text-align: center;
     font-size: large;
     max-width: 80%;
+    margin-left: 8%;
 
 }
 
@@ -73,22 +75,25 @@ body {
 }
 
 footer {
-    background-color: transparent;
-    position: absolute;
-    bottom: -150px;
+    background-color: rgba(2,0,36,1);
+    position: fixed;
+    bottom: 0px;
     width: 50%;
     height: 3%;
     width: 100%;
+    left: 0%;
     display: flex;
     justify-content: center;
     font-size: 12px;
+    padding-bottom: 15px;
 }
 
 .footer-txt {
     padding-right: 1ch;
     font-style: normal;
+    padding-bottom: 20px;
     color: #ff8929;
-
+    
 }
 
 .footer-link {
@@ -96,6 +101,7 @@ footer {
     font-style: normal;
     text-decoration: underline;
     color: white;
+    padding-top: 10px;
 
 }
 
@@ -103,6 +109,12 @@ footer {
     color: #5b1844;
     text-decoration: none;
     font-size: 105%;
+}
+
+.btn_rejouer:hover {
+    background-color: rgba(245, 245, 245, 0.761);
+    transition-delay: 2ms;
+    width: 39%;
 }
 
 
@@ -123,8 +135,9 @@ footer {
     }
 
     #mot {
-        width: 100%;
-        margin: 10%
+        width: 50%;
+        margin-left: 25%;
+        background-color: #5b18444b;
     }
     footer {
         background-color: rgba(2,0,36,1);
@@ -142,7 +155,7 @@ footer {
         padding-right: 1ch;
         font-style: normal;
         color: #ff8929;
-        margin-bottom: 0px;
+        margin-top: 4px;
         font-size: 8px;
     }
     
@@ -151,13 +164,19 @@ footer {
         font-style: normal;
         text-decoration: underline;
         color: white;
-        margin-bottom: 0px;
-        margin-top: 8px;
+        margin-top: -6px;
         font-size: 8px;
+    }
+
+    .footer-link:hover {
+        font-size: 10px;
     }
 
     #rejouer {
         margin-bottom: 50px;
+        width: 70%;
+        margin-left: 12%;
     }
+
 
 }
