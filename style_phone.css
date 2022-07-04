@@ -1,0 +1,177 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    body {
+        background-color: black;
+    }
+    #home {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(0,0,0);
+        color: white;
+        padding-bottom: 20px;
+    }
+    
+    #portfolio {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        color: black;
+    }
+    
+    #contact {
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        color: white;
+    }
+
+
+    /*------------------------------------------
+                HOME STYLE
+    --------------------------------------------*/
+    /*headbar style*/
+    #headbar{
+        font-size: 15px;
+    }
+    #navbtn{
+        margin-right: 0%;
+        margin-left: 6%;
+    }
+    #separator{
+        padding: 0px;
+        margin-top: 17px;
+        margin-left: 20px;
+    }
+    #contactpic{
+        width: 10%;
+        margin-top: 2px;
+    }
+    #gitpica{
+        margin-right: 40%;
+    }
+    #imggit{
+        width: 15px;
+    }
+    #linkedinpica{
+        margin-right: 30%;
+    }
+    #imglinkedin{
+        width: 15px;
+    }
+    #instpica{
+        margin-left: 10%;
+    }
+    #imginst{
+        width: 15px;
+    }
+
+    /*presentation style*/
+    #homepres{
+        height: 60%;
+        width: 100%;
+    }
+    #presentationtext{
+        padding-top: 2.5%;
+        padding-bottom: 10%;
+    }
+    #presentationimg{
+        background-color: transparent;
+        padding-top: 0px;
+        clip-path: circle(44.5% at 38% 52%);
+        width: 70%;
+        height: fit-content;
+    }
+    #pfp{
+        margin-left: -25%;
+        margin-top: 1%;
+        width: 70%;
+    }
+    #name{
+        font-size: 55px;
+        text-align: start;
+        margin-top: 25%;
+    }
+    #hometext{
+        font-size: 19px;
+        margin-top: 25%;
+        width: 180%;
+        padding-bottom: 10%;
+    }
+    #getintouch{
+        width: 180%;
+        height: 13%;
+    }
+    #getintouch:hover{
+        height: 13%;
+        width: 181%;
+        margin-top: 5%;
+        margin-left: -0.5%;
+        background-color: rgba(255, 255, 255, 0.12);
+    }
+    #getintouchbtn{
+        font-size: 20px;
+        border-radius: 17px;
+    }
+
+    /*Formation presentation style*/
+    #formation{
+        margin-top: 5%;
+    }
+    #titre-formation{
+        font-size: 2.5vh;
+    }
+    #scrolling-formation{
+
+    }
+    #scrolling-formation:hover{
+        overflow-x: auto;
+    }
+
+    .card{
+        width: 43%;
+        flex-direction: row;
+    }
+    .card-img{
+        margin-top: 3%;
+        margin-left: 3%;
+    }
+    #insa-img{
+        width: 40px;
+    }
+    #cardiff-img{
+        width: 40px;
+    }
+    .card-text{
+        padding: 0px;
+    }
+    .title-card{
+        font-size: 16px;
+        margin-top: 5%;
+        margin-left: 7%;
+    }
+    .description-card{
+        font-size: 18px;
+        margin-top: 17%;
+        margin-left: -24%;
+        margin-right: 15%;
+    }
+    .date-card{
+        font-size: 14px;
+        margin-top: 15%;
+        margin-bottom: 0%;
+        margin-left: 0%;
+        margin-right: 2%;
+    }
+    #lycee-card .card-text .date-card{
+        margin-top: 15%;
+        margin-left: 0%;
+    }
+    #lycee-card .card-text .title-card{
+        font-size: 15.5px;
+    }
+    #date-cardiff{
+        margin-top: 29%;
+        margin-right: 2%;
+    }
+}

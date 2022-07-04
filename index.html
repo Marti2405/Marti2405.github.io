@@ -5,12 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marti Jimenez</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Actor&family=Alata&family=Audiowide&display=swap');
-    </style>
+    <link rel="stylesheet" href="style_pc.css">
+    <link rel="stylesheet" href="style_phone.css">
+    <script src="script.js"></script>
 </head>
+
 <body>
-    <a href="https://marti2405.github.io/semantika/">Semántika</a>
+
+    <div id="home">
+
+        <div id="headbar">
+            <div id="navbtn">
+                <a id="homebtn" class="headbtn" href="#home">Home</a>
+                <a id="portfoliobtn" class="headbtn" href="#portfolio">Portfolio</a>
+                <a id="contactbtn" class="headbtn" href="#contact">Contact</a>
+            </div>
+            <div id="separator">
+                <img src="images/separator.png" alt="separator" id="separatorpic">
+            </div>
+            <div id="contactpic">
+                <a href="https://github.com/Marti2405" id="gitpica">
+                    <img src="images/Github.png" alt="" id="imggit">
+                </a>
+                <a href="https://www.linkedin.com/in/marti-jimenez/" id="linkedinpica">
+                    <img src="images/Linkedin.png" alt="Linkedin" id="imglinkedin">
+                </a>
+                <a href="https://www.instagram.com/marti_jimenez__/?hl=en" id="instpica">
+                    <img src="images/Instagram.png" alt="Instagram" id="imginst">
+                </a>
+            </div>
+        </div>
+
+        <div id="homepres">
+            <div id="presentationtext">
+                <div id="name">Marti Jimenez</div>
+                <div id="hometext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sunt et vitae, ullam, nesciunt illo blanditiis aliquam natus nobis iure cupiditate eos aperiam totam eum! Labore qui cum molestiae earum!</div>
+                <div id="getintouch"><button id="getintouchbtn" onclick="getintouchbtn()">Get in touch ></button></div>
+            </div>
+            <div id="presentationimg"><img src="images/pfp3.png" alt="Photo of Marti" id="pfp"></div>
+        </div>
+
+        <div id="formation">
+            <div id="titre-formation">Studied and currently studying</div>
+            <div id="scrolling-formation">
+                <div class="card" id="first-card" onclick="location.href='https://www.insa-toulouse.fr/en/index.html';">
+                    <div class="card-img">
+                        <img src="images/insa-img.png" alt="" id="insa-img">
+                    </div>
+                    <div class="card-text">
+                        <div class="title-card">INSA - Toulouse</div>
+                        <div class="description-card">Computer Science, Big Data</div>
+                        <div class="date-card">02/2023 - Today</div>
+                    </div>
+                    
+                </div>
+                <div class="card" onclick="location.href='https://www.cardiff.ac.uk/';">
+                    <div class="card-img" >
+                        <img src="images/cardiff-img.png" alt="" id="cardiff-img">
+                    </div>
+                    <div class="card-text">
+                        <div class="title-card">Cardiff University</div>
+                        <div class="description-card">Computer Science</div>
+                        <div class="date-card" id="date-cardiff">09/2022 - 01/2023</div>
+                    </div>
+                </div>
+                <div class="card" onclick="location.href='https://www.insa-toulouse.fr/en/index.html';">
+                    <div class="card-img" >
+                        <img src="images/insa-img.png" alt="" id="insa-img">
+                    </div>
+                    <div class="card-text">
+                        <div class="title-card">INSA - Toulouse</div>
+                        <div class="description-card">Maths, Physics and Algorithmics</div>
+                        <div class="date-card">09/2020 - 06/2022</div>
+                    </div>
+                </div>
+                <div class="card" id="lycee-card" onclick="location.href='https://deodat-de-severac-ceret.mon-ent-occitanie.fr/';">
+                    <div class="card-img">
+                        <img src="images/lycee-img.png" alt="" id="cardiff-img">
+                    </div>
+                    <div class="card-text">
+                        <div class="title-card">Déodat de Séverac</div>
+                        <div class="description-card">French HS diploma,<br>Science major</div>
+                        <div class="date-card">06/2020</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="portfolio">Portfolio</div>
+
+    <div id="contact">Contact</div>
+
 </body>
+
 </html>
