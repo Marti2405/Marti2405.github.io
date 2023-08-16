@@ -1,13 +1,475 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loading</title>
-    <meta http-equiv="refresh" content="0; url=https://marti2405.github.io/semantika/" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-32x32.png">
+    <link rel="manifest" href="icons/site.webmanifest">
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Marti Jimenez</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="https://marti2405.github.io/" class="link"
+          >MJ</a
+        >
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#experience">Experience</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#education">Education</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <h1>Hi, I am <span class="about__name">Marti Jimenez</span></h1>
+        <h2 class="about__role">A Computer Science Engineering Student</h2>
+        <p class="about__desc">
+          &#11088; I'm studying CS engineering in France. Immersed in the world of algorithms and code, I'm on a journey to master the art of crafting elegant solutions to complex problems.<br><br>
+
+          &#129504; I'm fascinated by Machine Learning. Driven by envisioning unique and unexplored applications of ML, my passion has led me to traverse the intriguing landscapes of Medical AI, where cutting-edge technology meets real-world impact. &#x1F3E5;<br><br>
+
+          <!--&#x1F331; Embracing the spirit of continuous growth, I've found a particular joy in tackling LeetCode challenges, even as a late bloomer to the platform. The process of deciphering intricate algorithmic puzzles has become a genuine passion of mine. <br><br>-->
+          
+          &#x1F50D; As I set my sights on the horizons of a Software Engineer or ML Engineer role, I'm drawn to opportunities that allow me to leverage my skills. I'm enthusiastic about joining projects that challenge conventions, spark innovation, and embrace outside-the-box problem-solving.<br><br>
+          
+          &#x1F680; Feel free to reach out and connect!</p>
+        </p>
+
+        <div class="about__contact center">
+          <a href="/ressources/resume.pdf">
+            <span class="btn btn--outline">Resume</span>
+          </a>
+
+          <a
+            href="https://github.com/Marti2405"
+            aria-label="github"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://linkedin.com/in/marti-jimenez"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+
+          
+          
+
+        </div>
+      </div>
+
+      <!--####################################
+      ########################################
+      ########################################
+      ########################################
+      ########################################-->
+
+
+      <!-- experiences -->
+      <section id="experience" class="section experiences">
+        <h2 class="section__title">experience</h2>
+        
+        <div class="experience__list">
+          <div class="experience">
+            <img src="images/lphi_logo.png" alt="LPHI Logo" class="experience__logo">
+            <h3>AI for High Dimensional PDE modeling in Oncology</h3>
+            <p>Laboratory of Pathogen and Host Immunity (LPHI), Montpellier, France</p>
+            <h5>Internship - 3 months, 2023</h5>
+            <p class="experience__description">
+              &#x2022 Developed a n-Dimensional non-linear Partial Differential Equations (PDEs) solver framework employing Physics-Informed Neural Networks (PINNs), resulting in an exponential reduction of time complexity.<br>
+              &#x2022 Successfully solved a complex 4D non-linear PDE system that captures the evolution of melanoma tumor heterogeneity, utilizing the finite difference method in Julia.<br>
+              &#x2022 Researched and proposed 2 innovative methods to solve interdependent systems of non-linear PDEs with PINNs.
+            </p>
+            <ul class="experience__stack">
+              <li class="experience__stack-item">Deep Learning</li>
+              <li class="experience__stack-item">Applied Mathematics</li>
+              <li class="experience__stack-item">Research</li>
+              <li class="experience__stack-item">Tensorflow</li>
+              <li class="experience__stack-item">Python</li>
+              <li class="experience__stack-item">Julia</li>
+            </ul>
+
+            <a
+              href="https://github.com/Marti2405/PDE_solver_PINN"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+
+            <a
+              href="./report.html"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+            
+            
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+      <!--####################################
+      ########################################
+      ########################################
+      ########################################
+      ########################################-->
+
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <img src="images/poisson_2d.png" alt="Poisson Equation 2D solution photo" class="project__logo">
+            <h3>Numerical Solutions for Poisson's Equation</h3><br>
+            <p class="project__description">
+              Developed numerical solver using Finite Difference Method for Poisson's Equation in 1D, 2D, and 3D with Dirichlet and Neumann boundary conditions.
+              Implemented in Julia.
+            </p><br><br><br>
+            <ul class="project__stack">
+              <li class="project__stack-item">Applied Mathematics</li>
+              <li class="project__stack-item">Julia</li>
+              <li class="project__stack-item">Data Visualisation</li>
+            </ul> 
+
+            <a
+              href="https://github.com/Marti2405/Poisson-Equation-1D-2D-3D-Finite-difference-method-in-Julia.git"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            
+          </div>
+
+          <div class="project">
+            <img src="images/pronunciation.png" alt="AI software photo" class="project__logo">
+            <h3>AI software for French pronuciation assistance</h3>
+            <p class="project__description">
+              Developed a Neural Network in Python for detecting and evaluating voiceless/voice fricatives consonant pairs in French pronunciation.<br>
+              Achieved 100% accuracy in consonant detection and good relation between the output percentage and the quality of the pronunciation.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Deep Learning</li>
+              <li class="project__stack-item">Signal Analysis</li>
+              <li class="project__stack-item">Python</li>
+            </ul>
+
+            <a
+              href="https://github.com/Marti2405/French_oral_aid_software_using_the_Fourier_transform_and_Neural_Networks"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            
+          </div>
+
+          <div class="project">
+            <img src="images/semantika.png" alt="Semantika web game" class="project__logo">
+            <h3>Semantika - Web Game</h3><br>
+            <p class="project__description">
+              Game where players guess the word of the day by identifying similar-meaning words.
+              Utilized Word2Vec model trained on 46 billion Spanish sentences.
+              Implemented distance calculation between words as a fundamental game mechanic.
+            </p><br><br>
+            <ul class="project__stack">
+              <li class="project__stack-item">HTML</li>
+              <li class="project__stack-item">CSS</li>
+              <li class="project__stack-item">JavaScript</li>
+            </ul>
+
+            <a
+              href="https://github.com/Marti2405/Marti2405.github.io/tree/main/semantika"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://marti2405.github.io/semantika/"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          
+
+        </div>
+      </section>
+
+
+
+
+      <!--####################################
+      ########################################
+      ########################################
+      ########################################
+      ########################################-->
+
+
+      
+      <!-- educations -->
+      <section id="education" class="section educations">
+        <h2 class="section__title">education</h2>
+
+        <div class="education__list">
+          <div class="education">
+            <img src="images/insa_logo.png" alt="INSA Logo" class="education__logo">
+            <h3>Master of Engineering<br>Computer Science</h3> 
+            <h4>4th Year</h4>
+            <p><b>09/2020 - Today</b></p>
+            <p><b>Currently taking</b></p>
+            <p>Institut National des Sciences Appliquées</p>
+            <p>Toulouse, France</p>  
+                    
+            <p class="education__description">
+              Top 10% ranking<br><br>
+              <b>&#x2022 Years 1-3:</b> Computer Science and Applied Mathematics<br>
+              <b>&#x2022 Years 4-5:</b> Machine Learning, Distributed Systems and Applications, Infrastructures, Prescriptive Analytics
+            <ul class="education__stack">
+            </ul>
+            
+
+            <a
+              href="https://www.insa-toulouse.fr/"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="education">
+            <img src="images/ut_logo.png" alt="University of Twente Logo" class="education__logo">
+            <h3>Master 1 <br>Exchange Semester</h3>
+            <p><b>09/2023 - Today</b></p>
+            <p><b>Currently taking</b></p>
+            <p>University of Twente</p>
+            <p>Enschede, Netherlands</p>
+            <br><br>
+            
+            <p class="education__description">
+              <b>Courses:</b> <br>Machine Learning I,
+              Machine Learning II,
+              Deep Learning,
+              Natural Language Processing,
+              Information Retrieval,
+              Big Data
+            </p>
+            <ul class="education__stack">
+            </ul>
+            <br><br>
+            <a
+              href="https://www.utwente.nl/en/"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+
+          <div class="education">
+            <img src="images/harvard_logo.png" alt="Harvard University Logo" class="education__logo">
+            <h3>Harvard Course<br> Artificial Intelligence</h3>
+            <p><b>08/2023 - Today</b></p>
+            <p><b>Currently taking</b></p>
+            <p>Remote</p>
+
+            <p class="education__description">
+              <b>CS50's Introduction to Artificial Intelligence with Python</b><br><br>
+              <b>Topics:</b><br>
+              Graph search algorithms, Adversarial search, Knowledge representation, Logical inference, Probability theory, Bayesian networks, Markov models, Constraint satisfaction, Machine learning, Reinforcement learning, Neural networks, Natural language processing
+            </p>
+            <ul class="education__stack">                     
+            </ul>
+
+            </a>
+            <a
+              href="https://pll.harvard.edu/course/cs50s-introduction-artificial-intelligence-python"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+
+          </div>
+          
+
+        </div>
+      </section>
+
+
+
+      
+      <!--####################################
+      ########################################
+      ########################################
+      ########################################
+      ########################################-->
+
+
+      
+      
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">Machine Learning</li>
+          <li class="skills__list-item btn btn--plain">Applied Mathematics</li>
+          <li class="skills__list-item btn btn--plain">Algorithm Design & Problem Solving</li>
+          <li class="skills__list-item btn btn--plain">Research</li>
+        </ul><br><br> 
+        
+        <ul class="skills__list"><img src="images/there_is_more_2.png" alt="There is more meme" class="skills__logo"></ul>
+        <br>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">Information Retrieval</li>
+          <li class="skills__list-item btn btn--plain">Dynamic & Recursive Programming</li>
+          <li class="skills__list-item btn btn--plain">Graphs</li>
+          <li class="skills__list-item btn btn--plain">OOP</li>
+          <li class="skills__list-item btn btn--plain">Data Visualisation</li>
+          <li class="skills__list-item btn btn--plain">Tensorflow</li>
+        </ul>
+      </section>
+      
+      <br><br><br>
+      
+      <h2 class="section__title">Programming Languages</h2>
+      <ul class="skills__list">
+        <li class="skills__list-item btn btn--plain">Julia</li>
+        <li class="skills__list-item btn btn--plain">Python</li>
+        <li class="skills__list-item btn btn--plain">C</li>
+        <li class="skills__list-item btn btn--plain">Java</li>
+        <li class="skills__list-item btn btn--plain">Matlab</li>
+        <li class="skills__list-item btn btn--plain">x86 Assembly</li>
+      </ul>
+
+      <br><br><br>
+      
+      <h2 class="section__title">Languages</h2>
+      <ul class="skills__list">
+        <li class="skills__list-item btn btn--plain">English</li>
+        <li class="skills__list-item btn btn--plain">French</li>
+        <li class="skills__list-item btn btn--plain">Spanish</li>
+        <li class="skills__list-item btn btn--plain">Catalan</li>
+      </ul>
+     
+  
+
+
+
+      <!--####################################
+      ########################################
+      ########################################
+      ########################################
+      ########################################-->
+
+
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:marti.jimenez.contact@gmail.com">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+        <br>
+        <a href="https://www.linkedin.com/in/marti-jimenez/">
+          <span class="btn btn--outline">Connect on Linkedin</span>
+        </a>
+      </section>
+    </main>
     
-</body>
+
+
+    <!--####################################
+      ########################################
+      ########################################
+      ########################################
+      ########################################-->
+
+
+    <footer class="footer">
+      <a href="https://github.com/marti2405"
+      class="link footer__link">
+        Created By Marti Jimenez
+      </a>
+      -
+      <a
+        href="https://github.com/rajshekhar26"
+        class="link footer__link"
+      >
+        Blueprint By Raj Shekhar
+      </a>
+    </footer>
+
+    <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
