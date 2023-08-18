@@ -234,7 +234,7 @@ main {
 }
 
 .light .section {
-  border-top-color: var(--clr-primary); /* Adjust border color for light mode */
+  border-top-color: var(--clr-fg-alt); /* Adjust border color for light mode */
 }
 
 .dark .section {
