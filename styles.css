@@ -311,6 +311,7 @@ main {
   border-radius: 0.4em;
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
+  width: 60vw;
 }
 
 .experience:hover {
