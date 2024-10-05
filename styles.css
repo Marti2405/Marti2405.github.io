@@ -320,6 +320,10 @@ main {
 
 .experience__description {
   margin-top: 1em;
+  text-align: justify;
+  text-align-last: left;
+  width: 90%;
+  margin: auto;
 }
 
 .experience__stack {
